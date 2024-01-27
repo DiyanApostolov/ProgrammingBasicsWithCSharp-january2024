@@ -7,7 +7,7 @@ string fruit = Console.ReadLine();
 string dayOfWeek = Console.ReadLine();
 double quantity = double.Parse(Console.ReadLine());
 
-double finalPrice = 0;
+double finalPriceForFruits = 0;
 
 switch (dayOfWeek)
 {
@@ -17,38 +17,38 @@ switch (dayOfWeek)
     case "Thursday":
     case "Friday":
         if (fruit == "banana")
-            finalPrice = quantity * 2.50;
+            finalPriceForFruits = quantity * 2.50;
         else if (fruit == "apple")
-            finalPrice = quantity * 1.20;
+            finalPriceForFruits = quantity * 1.20;
         else if (fruit == "orange")
-            finalPrice = quantity * 0.85;
+            finalPriceForFruits = quantity * 0.85;
         else if (fruit == "grapefruit")
-            finalPrice = quantity * 1.45;
+            finalPriceForFruits = quantity * 1.45;
         else if (fruit == "kiwi")
-            finalPrice = quantity * 2.70;
+            finalPriceForFruits = quantity * 2.70;
         else if (fruit == "pineapple")
-            finalPrice = quantity * 5.50;
+            finalPriceForFruits = quantity * 5.50;
         else if (fruit == "grapes")
-            finalPrice = quantity * 3.85;
+            finalPriceForFruits = quantity * 3.85;
         else
             Console.WriteLine("error");
         break;
     case "Saturday":
     case "Sunday":
         if (fruit == "banana")
-            finalPrice = quantity * 2.70;
+            finalPriceForFruits = quantity * 2.70;
         else if (fruit == "apple")
-            finalPrice = quantity * 1.25;
+            finalPriceForFruits = quantity * 1.25;
         else if (fruit == "orange")
-            finalPrice = quantity * 0.90;
+            finalPriceForFruits = quantity * 0.90;
         else if (fruit == "grapefruit")
-            finalPrice = quantity * 1.60;
+            finalPriceForFruits = quantity * 1.60;
         else if (fruit == "kiwi")
-            finalPrice = quantity * 3;
+            finalPriceForFruits = quantity * 3;
         else if (fruit == "pineapple")
-            finalPrice = quantity * 5.60;
+            finalPriceForFruits = quantity * 5.60;
         else if (fruit == "grapes")
-            finalPrice = quantity * 4.20;
+            finalPriceForFruits = quantity * 4.20;
         else
             Console.WriteLine("error");
         break;
@@ -57,7 +57,7 @@ switch (dayOfWeek)
         break;
 }
 
-if (finalPrice > 0)
+if (finalPriceForFruits > 0)
 {
-    Console.WriteLine($"{finalPrice:F2}");
+    Console.WriteLine($"{finalPriceForFruits:F2}");
 }
