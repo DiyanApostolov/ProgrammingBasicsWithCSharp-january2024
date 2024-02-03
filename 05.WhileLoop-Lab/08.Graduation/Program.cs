@@ -28,9 +28,8 @@ while (klas <= 12)
 	allGrades += currentGrade;
 }
 
-//if (klas >= 12)
-//{
-    double averageGrade = allGrades / 12;
-    Console.WriteLine($"{name} graduated. Average grade: {averageGrade:F2}");
-//}
+
+double averageGrade = allGrades / 12;
+Console.WriteLine($"{name} graduated. Average grade: {averageGrade:F2}");
+
 
